@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,100&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 810px;
+  background-color: #ffffff;
+  margin: 0 auto;
+  padding: 2em;
+  border: 2px solid #ddd;
+  font-family: 'Roboto';
+  color: #1a1a1a;
+}
+
+h1,
+h2,
+h3,
+b {
+  text-transform: uppercase;
+  position: relative;
+}
+
+main p {
+  margin-bottom: .5em;
+}
+
+main p:last-of-type {
+  margin-bottom: 2em;
+}
+
+h2 {
+  display: inline-block;
+  margin-bottom: calc(1em + 5px);
+}
+
+h2::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  height: 5px;
+  width: 40%;
+  background: #1a1a1a;
+}
+
+header {
+  position: relative;
+}
+
+header h1 {
+  font-weight: bold;
+  font-size: 5rem;
+}
+
+header p {
+  font-weight: normal;
+  font-size: 1rem;
+  margin-left: 5px;
+}
+
+header::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -2em;
+  width: 100%;
+  height: 2px;
+  background: #ddd;
+  transform: translateX(-50%);
+}
+
+aside {
+  border-right: 1px solid #ddd;
+}
+
+main {
+  padding-top: 2em;
+  display: grid;
+  grid-template-columns: 15em auto;
+}
+
+main > div {
+  border-left: 1px solid #ddd;
+  padding-left: 2em;
+}
+
+
+main > div,
+aside {
+  padding-top: 2em;
+}
+
+address,
+a {
+  margin-bottom: 1.8em;
+  display: block;
+}
+
+a {
+  color: #1a1a1a;
+}
+
+ul {
+  margin-left: 1em;
+  list-style-type: square;
+  margin-bottom: 2em;
+}
+
+@media print {
+  body {
+    border: none;
+  }
+}
