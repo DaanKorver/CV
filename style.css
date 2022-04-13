@@ -28,6 +28,10 @@ main p {
   margin-bottom: .5em;
 }
 
+main > div p {
+  margin-bottom: 1em;
+}
+
 main p:last-of-type {
   margin-bottom: 2em;
 }
@@ -42,7 +46,7 @@ h2::after {
   position: absolute;
   left: 0;
   bottom: -3px;
-  height: 5px;
+  height: 3px;
   width: 40%;
   background: #1a1a1a;
 }
@@ -110,8 +114,21 @@ ul {
   margin-bottom: 2em;
 }
 
+time {
+  margin: .5em 0;
+  display: block;
+}
+
+.page-fix {
+  margin-top: 1em;
+}
+
 @media print {
   body {
     border: none;
+  }
+
+  .pagebreak {
+    break-after: page;
   }
 }
